@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutoring Session</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style media="screen">
+      #box {
+        border: 1px solid #000;
+        width: 20%;
+        margin: 0 auto;
+        text-align:center;
+      }
+
+      button {
+        padding: 10px 0 10px 0;
+        width: 80%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      #parent {
+        position: relative;
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: 112px;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="box">
+        <h2>You won a free trip!</h2>
+        <button id="something">Hello!</button>
+        <a id="close">x</a>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      // function starbucks() {
+      //
+      // };
+      //
+      // starbucks();
+      // //function literal (greedy function). can be called before or after the function.
+      //
+      //
+      // var starbucks = function() {
+      //
+      // };
+      //
+      // starbucks();
+      // //variable function. Can only be called after the function has been defined. Preferred way of writing.
+      //
+      // document.getElementById('something').addEventListener('click', function(event){
+      //   console.log(event);
+      // });
+      // $('#something').click(function(){
+      //   alert('Hello!');
+      // });
+      // $('#box').hide();
+      $('#close').click(function(){
+        setTimeout(function(){
+          $('#box').hide();
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

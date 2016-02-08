@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutoring Session</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style media="screen">
+
+
+    </style>
+  </head>
+  <body>
+    <input type="number" id="input" />
+    <button id="start">Start</button>
+
+
+    <script type="text/javascript">
+      $('#start').click(function(){
+        setInterval(function(){
+          input.value++;
+        }, 1000)
+      });
+    </script>
+  </body>
+</html>

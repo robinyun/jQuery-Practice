@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutoring Session</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style media="screen">
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .bold {
+        font-weight: bold;
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Checklist</h2>
+    <div id='one' clicked><a href="#">Apples</a></div>
+    <div id='two' clicked><a href="#">Bananas</a></div>
+    <div id='three' clicked><a href="#">Oranges</a></div>
+    <div id='four' clicked><a href="#">Grapes</a></div>
+
+    <script type="text/javascript">
+      var ids = ['#one', '#two', '#three', '#four'];
+      for (var i = 0; i < ids.length; i++) {
+        $(ids[i]).click(function(){
+          if ($(this).attr('clicked') == "") {
+            $(this).addClass('bold');
+            $(this).attr('clicked', 'clicked');
+          } else {
+            $(this).removeClass('bold');
+            $(this).attr('clicked', '');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

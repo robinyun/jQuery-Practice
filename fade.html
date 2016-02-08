@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutoring Session</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style media="screen">
+
+    #message {
+      display: none;
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    #displayButton {
+      text-align: center;
+    }
+
+    button {
+      width: 50%;
+      padding: 5px 0 5px 0;
+      font-size: 12px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="displayButton">
+      <button id="up">For more information on jQuery, click here!</button>
+    </div>
+    <div id="message">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</div>
+    <script type="text/javascript">
+      $('button').click(function(){
+        $('#message').fadeToggle("slow");
+      });
+    </script>
+  </body>
+</html>

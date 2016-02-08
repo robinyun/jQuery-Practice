@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutoring Session</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style media="screen">
+      button {
+        width: 12%;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+
+      img {
+        width: 100px;
+        border-radius: 50px;
+        border: 2px solid black;
+        margin: 20px 0 0 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button id="expand">Click to expand!</button>
+    <div id="animate">
+      <img id="lying" src="lying.jpg" alt="Smiley" />
+    </div>
+    <script type="text/javascript">
+      $('#expand').click(function() {
+        $('#lying').animate({
+          width: "50%",
+          marginLeft: "10px",
+          borderWidth: "4px",
+          borderRadius: "450px",
+        }, 4000);
+      });
+    </script>
+  </body>
+</html>
